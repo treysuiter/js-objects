@@ -72,4 +72,13 @@ const empireStateBuilding = {
     architect: "Shreve, Lamb & Harmon"
 }
 
-console.log(`Stories: ${empireStateBuilding.stories}`)
+console.log(`Stories: ${empireStateBuilding.stories}, Height ${empireStateBuilding.height}, Sq Ft: ${empireStateBuilding.squareFeet}, EWL: ${empireStateBuilding.eastWestLength}, NSL: ${empireStateBuilding.northSouthLength}`)
+
+const addressKey = "address"
+const constructionKey = "constructionDate"
+const ownerKey = "owner"
+const costKey = "cost"
+const architectKey = "architect"
+
+console.log(`The ESB is located at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} 
+by ${empireStateBuilding[architectKey]}. It cost $${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding.ownerKey}`)
