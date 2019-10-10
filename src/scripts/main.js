@@ -83,20 +83,59 @@ console.log("What is that was is now.")
 // console.log(`The ESB is located at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} 
 // by ${empireStateBuilding[architectKey]}. It cost $${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding.ownerKey}`)
 
-const nashvilleSoftwareSchool = {
-    founded: 2012,
-    director: "John Wark",
-    instructors: {
-        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
-        partTime: ["Zoe", "Nathan"]
+// const nashvilleSoftwareSchool = {
+//     founded: 2012,
+//     director: "John Wark",
+//     instructors: {
+//         fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+//         partTime: ["Zoe", "Nathan"]
+//     },
+//     address: "500 Interstate Blvd. S"
+// }
+
+// for (let i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++)
+// console.log(`Full-time: ${nashvilleSoftwareSchool.instructors.fullTime[i]}`)
+
+// for (let i = 0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++)
+// console.log(`Part-time: ${nashvilleSoftwareSchool.instructors.partTime[i]}`)
+
+// console.log(`${nashvilleSoftwareSchool.instructors.fullTime[4]}, ${nashvilleSoftwareSchool.instructors.partTime[0]} `)
+
+const beatles = {
+    albums: ["Abbey Road", "Sgt Peppers Lonely Heart's Club Band", "Revolver", "Magical Mystery Tour", "Something New"],
+    history: {
+        formed: 1960,
+        disbanded: 1970
     },
-    address: "500 Interstate Blvd. S"
+    members: [
+        {
+            name: "George Harrison",
+            birth: 1943,
+            death: 2001
+        },
+        {
+            name: "Paul McCartney",
+            birth: 1942,
+            death: null
+        },
+        {
+            name: "John Lennon",
+            birth: 1940,
+            death: 1980
+        },
+        {
+            name: "Ringo Starr",
+            birth: 1940,
+            death: null
+        }
+    ]
 }
 
-for (i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++)
-console.log(`Full-time: ${nashvilleSoftwareSchool.instructors.fullTime[i]}`)
+const paul = beatles.members[1].name
+const paulBorn = beatles.members[1].birth
+const magicalMystery = beatles.albums[3]
+const formed = beatles.history.formed
+const disbanded = beatles.history.disbanded
 
-for (i = 0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++)
-console.log(`Part-time: ${nashvilleSoftwareSchool.instructors.partTime[i]}`)
-
-console.log(`${nashvilleSoftwareSchool.instructors.fullTime[4]}, ${nashvilleSoftwareSchool.instructors.partTime[0]} `)
+console.log(`${paul} was in the Beatles from ${formed} to ${disbanded}. He was born in ${paulBorn}. He contributed heavily to the ${magicalMystery}.
+`)
