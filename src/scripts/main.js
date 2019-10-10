@@ -1,4 +1,4 @@
-// console.log("What is that was is now.")
+console.log("What is that was is now.")
 
 // const car = {
 //     make: "Ford",
@@ -39,22 +39,37 @@
 
 // console.log(familyMembers)
 
-const wardrobe = {
-    height: 80,
-    manufacturer: "Killibrew & Sons",
-    contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
-    depth: 38,
-    width: 50
+// const wardrobe = {
+//     height: 80,
+//     manufacturer: "Killibrew & Sons",
+//     contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
+//     depth: 38,
+//     width: 50
+// }
+
+// console.log(wardrobe.height)
+// console.log(wardrobe.manufacturer)
+// console.log(wardrobe.contents)
+// console.log(wardrobe.contents[0])
+// console.log(wardrobe.contents[1])
+// console.log(wardrobe.contents[2])
+// console.log(wardrobe.contents[3])
+// console.log(wardrobe.contents[4])
+
+// console.log(wardrobe.depth)
+// console.log(wardrobe.width)
+
+const empireStateBuilding = {
+    stories: 103,
+    height: 1453,
+    address: "350 Fifth Avenue, Manhattan, New York 10118",
+    squareFeet: 2768591,
+    constructionDate: 1931,
+    cost: 40948900,
+    owner: "Empire State Realty Trust",
+    eastWestLength: 424,
+    northSouthLength: 187,
+    architect: "Shreve, Lamb & Harmon"
 }
 
-console.log(wardrobe.height)
-console.log(wardrobe.manufacturer)
-console.log(wardrobe.contents)
-console.log(wardrobe.contents[0])
-console.log(wardrobe.contents[1])
-console.log(wardrobe.contents[2])
-console.log(wardrobe.contents[3])
-console.log(wardrobe.contents[4])
-
-console.log(wardrobe.depth)
-console.log(wardrobe.width)
+console.log(`Stories: ${empireStateBuilding.stories}`)
