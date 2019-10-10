@@ -59,26 +59,44 @@ console.log("What is that was is now.")
 // console.log(wardrobe.depth)
 // console.log(wardrobe.width)
 
-const empireStateBuilding = {
-    stories: 103,
-    height: 1453,
-    address: "350 Fifth Avenue, Manhattan, New York 10118",
-    squareFeet: 2768591,
-    constructionDate: 1931,
-    cost: 40948900,
-    owner: "Empire State Realty Trust",
-    eastWestLength: 424,
-    northSouthLength: 187,
-    architect: "Shreve, Lamb & Harmon"
+// const empireStateBuilding = {
+//     stories: 103,
+//     height: 1453,
+//     address: "350 Fifth Avenue, Manhattan, New York 10118",
+//     squareFeet: 2768591,
+//     constructionDate: 1931,
+//     cost: 40948900,
+//     owner: "Empire State Realty Trust",
+//     eastWestLength: 424,
+//     northSouthLength: 187,
+//     architect: "Shreve, Lamb & Harmon"
+// }
+
+// console.log(`Stories: ${empireStateBuilding.stories}, Height ${empireStateBuilding.height}, Sq Ft: ${empireStateBuilding.squareFeet}, EWL: ${empireStateBuilding.eastWestLength}, NSL: ${empireStateBuilding.northSouthLength}`)
+
+// const addressKey = "address"
+// const constructionKey = "constructionDate"
+// const ownerKey = "owner"
+// const costKey = "cost"
+// const architectKey = "architect"
+
+// console.log(`The ESB is located at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} 
+// by ${empireStateBuilding[architectKey]}. It cost $${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding.ownerKey}`)
+
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
 }
 
-console.log(`Stories: ${empireStateBuilding.stories}, Height ${empireStateBuilding.height}, Sq Ft: ${empireStateBuilding.squareFeet}, EWL: ${empireStateBuilding.eastWestLength}, NSL: ${empireStateBuilding.northSouthLength}`)
+for (i = 0; i < nashvilleSoftwareSchool.instructors.fullTime.length; i++)
+console.log(`Full-time: ${nashvilleSoftwareSchool.instructors.fullTime[i]}`)
 
-const addressKey = "address"
-const constructionKey = "constructionDate"
-const ownerKey = "owner"
-const costKey = "cost"
-const architectKey = "architect"
+for (i = 0; i < nashvilleSoftwareSchool.instructors.partTime.length; i++)
+console.log(`Part-time: ${nashvilleSoftwareSchool.instructors.partTime[i]}`)
 
-console.log(`The ESB is located at ${empireStateBuilding[addressKey]}. It was built in ${empireStateBuilding[constructionKey]} 
-by ${empireStateBuilding[architectKey]}. It cost $${empireStateBuilding[costKey]} and is owned by ${empireStateBuilding.ownerKey}`)
+console.log(`${nashvilleSoftwareSchool.instructors.fullTime[4]}, ${nashvilleSoftwareSchool.instructors.partTime[0]} `)
